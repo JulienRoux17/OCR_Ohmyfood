@@ -1,0 +1,26 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin-block: 0;
+}
+
+body {
+  max-width: 375px;
+  margin: 0;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+}
+.restaurant_img {
+  width: 100%;
+  height: 174px;
+}
+.restaurant__name {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: shrikhand;
+  margin: 32px 4.53% 40px 4.53%;
+}
+.restaurant__like {
+  font-size: 22px;
+}/*# sourceMappingURL=styles.css.map */

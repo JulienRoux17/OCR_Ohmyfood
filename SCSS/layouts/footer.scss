@@ -1,0 +1,21 @@
+.footer{
+    padding: 22px 6.66% 22px 6.66%;
+    &__title{
+        font-family: shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+    &__link{
+        &__content{
+            margin-top: 8px;
+            &__logo-container{
+                display: inline-block;
+                height: 13px;
+                font-size: 13px;
+                width: 11px;
+                margin-right: 2.93%;
+        }
+    }
+}
+}

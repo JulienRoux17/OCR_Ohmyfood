@@ -1,0 +1,55 @@
+/*MAIN*/
+
+/*RESTAURANT*/
+
+.restaurant{
+    background-color: $main-bg-color;
+    border-radius: 40px 40px 0 0; 
+    &__name{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: shrikhand;
+        margin: 32px 7.53% 0 4.53%;
+        border-radius: 40px 40px 0 0;
+    }
+    &__like{
+        display: inline-block;
+        font-size: 22px;
+    }
+    &__menu{
+        margin: 40px 4.53% 0 4.53%;
+        &__division{
+            font-size: 16px;
+            font-weight: 300;
+            height: 27px;
+            border-bottom: 3px solid;
+            border-color: $color-border;
+        }
+        &__content{
+            margin-top: 12px;
+            border-radius: 15px;
+            background-color: $second-bg-color;
+            padding: 15px 4.4% 15px 4.4%;
+            &__plats{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            &__description{
+                display:inline-block;
+                font-size: 15px;
+                font-weight: 300;
+                margin-right: 44%
+            }
+            &__price{
+                display: inline-block;
+                width: 7.92%;
+                font-size: 15px; 
+                font-weight: 700;
+            }
+            
+        }
+    }
+}
+/**/

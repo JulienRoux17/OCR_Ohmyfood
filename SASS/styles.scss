@@ -1,0 +1,269 @@
+*{
+    font-family: 'Roboto' , sans-serif;
+    margin-block: 0;
+    text-decoration: none;
+}
+
+/*VARIABLES*/
+
+/*COLORS*/
+$main-bg-color: #F6F6F6;
+$white: #FFFFFF;
+$purple: #9356DC;
+$grey: #353535;
+$grey-light: #7E7E7E;
+$black-light: #353535;
+$black: #000;
+$green-light: #99E2D0;
+$green: #008766;
+/**/
+/*SHADOW*/
+$shadow-light: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+/**/
+
+/*MIXINS*/
+@mixin button {
+    text-align: center;
+    background: linear-gradient(360deg, #9356DC, #FF79DA);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/**/
+
+/*BODY*/
+
+body{
+max-width: 375px;
+margin: 0;
+}
+
+/**/
+
+/*HEADER*/
+.navbar{
+    display: flex;
+    padding: 17px 0 16px 4.53%;
+    justify-content: center;
+    &--flex{
+        display: flex;
+        gap: 17%;
+        justify-content: flex-start;
+    }
+    &__redirect-link{ 
+        &__content{
+            width: 30px;
+            height: 30px;
+            &__logo{
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+    &__title{
+        width: 162px;
+        height: 30px;
+        &__logo{
+            width: 162px;
+            height: 30px;
+            font-size: 30px;
+        }
+        &__text{
+            display: none;
+        }
+    }
+
+}
+
+.opener{
+    /*height: 225px;*/
+    &__content{
+        padding: 15.5px 0 15.5px 0;
+        background-color: #EAEAEA;
+        &__text{
+            text-align: center;
+            &__icon-location{
+                margin-right: 4.53%;
+            }
+        }
+    }
+    &__hook{
+        background-color: #F6F6F6;
+        padding: 30px 0 30px 0;
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin: 30px 8% 27px 8%;
+        }
+        &__link{
+            display: block;
+            width: 218px;
+            margin-left: 21.86%;
+            padding: 17px 0 17px 0;
+            @include button
+        }
+    }
+}
+
+/**/
+
+/*FOCNTIONS*/
+
+.fonctions{
+    height: 420px;
+    padding: 55px 5.33% 0 5.33%;
+    &__title{
+        margin-bottom: 33px;
+    }
+    &__container{
+        display: inline-block;
+        width: 96%;
+        border-radius: 20px;
+        padding: 26.5px 0 26.5px 0;
+        margin: 0 0 25px 2.67%;
+        background-color: #F6F6F6;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        &__number{
+            display: inline-block;
+            padding: 2.5px 7.5px 2.5px 7.5px;
+            border-radius: 50%;
+            margin-left: -3%;
+            color: white;
+            background-color: #9356DC;
+        }
+        &__logo{
+            display: inline-block;
+            margin: 0 8.06% 0 7.78%;
+            &__icon-color--grey{
+                color: #7E7E7E;
+            }
+            &__icon-color--purple{
+                color: #9356DC;
+            }
+        }
+        &__text{
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}
+
+/**/
+
+/*RESTAURANTS*/
+
+.restaurants{
+    padding: 55px 5.33% 66px 5.33%;
+    background-color: #F6F6F6;
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__cards{
+        position: relative;
+        &__link{
+            text-decoration: none;
+            &__container{
+                display: flex;
+                flex-direction: column;
+                border-radius: 15px;
+                margin-top: 18px;
+                width: 100%;
+                background-color: #ffffff;
+                &__img{
+                    width: 100%;
+                    height: 174px;
+                    border-radius: 15px 15px 0 0;
+                } 
+                &__new{
+                    position: absolute;
+                    padding: 7.5px;
+                    margin: 15px 15px 0 72.53%;
+                    border-radius: 2px;
+                    background-color: #99E2D0;
+                    color: #008766;
+                }
+                &__description{
+                    display: flex;
+                    padding: 16.5px 7.46% 16.5px 3.88%;
+                    &__content{
+                        height: 44px;
+                        width: 51%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        &__title{
+                            font-size: 18px;
+                            font-weight: 700;
+                            height: 18px;
+                            color: #000;
+                        }
+                        &__location{
+                            height: 17px;
+                            color: #000;
+                        }  
+                    }
+                    &__icon_container{
+                        width: 22px;
+                        height: 22px;
+                        margin: 10px 0 0 42%;
+                        color: #101010;
+                        font-size: 22px;
+                        &__heart{
+                            background-color: $white;
+                            position: absolute;
+                            z-index: 1;
+                            &:active{
+                                display: none;
+                            }
+                        }
+                        &__heart-purple{
+                            display: none;
+                            position: absolute;
+                            color: $purple;
+                        }
+                    }
+                }             
+            }
+        }
+    }
+}
+/**/
+
+/*FOOTER*/
+
+.footer{
+    padding: 22px 6.66% 22px 6.66%;
+    background-color: #353535;
+    color: white;
+    &__title{
+        font-family: shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+    &__link{
+        &__content{
+            margin-top: 8px;
+            color: white;
+            &__logo-container{
+                display: inline-block;
+                height: 13px;
+                font-size: 13px;
+                width: 11px;
+                margin-right: 2.93%;
+            }
+            &__text{
+                display: inline-block;
+            }
+        }
+    }
+}
+/**/

@@ -1,0 +1,233 @@
+/*HTML*/
+* {
+  font-family: "Roboto", sans-serif;
+  margin-block: 0;
+}
+
+/**/
+/*VARIABLES*/
+/*COLORS*/
+/**/
+/*SHADOW*/
+/**/
+/**/
+/*BODY*/
+body {
+  max-width: 375px;
+  margin: 0;
+}
+
+/**/
+/*HEADER*/
+.navbar {
+  display: flex;
+  padding: 17px 0 16px 4.53%;
+  justify-content: center;
+}
+.navbar--flex {
+  display: flex;
+  gap: 17%;
+  justify-content: flex-start;
+}
+.navbar__redirect-link__content {
+  width: 30px;
+  height: 30px;
+}
+.navbar__redirect-link__content__logo {
+  font-size: 30px;
+  color: #000;
+}
+.navbar__title {
+  width: 162px;
+  height: 30px;
+}
+.navbar__title__logo {
+  width: 162px;
+  height: 30px;
+  font-size: 30px;
+}
+.navbar__title__text {
+  display: none;
+}
+
+.img {
+  height: 275px;
+  width: 100%;
+}
+
+.opener {
+  /*height: 225px;*/
+}
+.opener__content {
+  padding: 15.5px 0 15.5px 0;
+  background-color: #EAEAEA;
+}
+.opener__content__text {
+  text-align: center;
+}
+.opener__content__text__icon-location {
+  margin-right: 4.53%;
+}
+.opener__hook {
+  background-color: #F6F6F6;
+  padding: 30px 0 30px 0;
+}
+.opener__hook__title {
+  text-align: center;
+}
+.opener__hook__text {
+  text-align: center;
+  margin: 30px 8% 27px 8%;
+}
+.opener__hook__link {
+  display: block;
+  width: 218px;
+  margin-left: 21.86%;
+  padding: 17px 0 17px 0;
+  text-align: center;
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  color: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.opener__hook__link__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/**/
+/*MAIN*/
+/*RESTAURANT*/
+.restaurant {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
+}
+.restaurant__name {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: shrikhand;
+  margin: 32px 7.53% 0 4.53%;
+}
+.restaurant__like {
+  display: inline-block;
+  background-color: #F6F6F6;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+}
+.restaurant__like__heart {
+  background-color: #F6F6F6;
+  position: absolute;
+  z-index: 1;
+}
+.restaurant__like__heart:active {
+  display: none;
+}
+.restaurant__like__heart-purple {
+  display: none;
+  position: absolute;
+  color: #9356DC;
+}
+.restaurant__menu {
+  margin: 40px 4.53% 0 4.53%;
+}
+.restaurant__menu__division {
+  font-size: 16px;
+  font-weight: 300;
+  height: 27px;
+}
+.restaurant__menu__border {
+  width: 40px;
+  height: 0;
+  border: 2px solid;
+  border-color: #99E2D0;
+}
+.restaurant__menu__container {
+  margin-top: 12px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  padding: 15px 0 15px 4.4%;
+  display: flex;
+}
+.restaurant__menu__container__card {
+  display: flex;
+}
+.restaurant__menu__container__card__plats {
+  width: 53%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.restaurant__menu__container__card__text {
+  width: 47%;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.restaurant__menu__container__content {
+  display: flex;
+}
+.restaurant__menu__container__content__price {
+  display: inline-block;
+  width: 7.92%;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 43%;
+  transition: transform 330ms ease-in-out;
+}
+.restaurant__menu__container__content__slide {
+  display: none;
+  padding: 28px 17.5% 28px 17.5%;
+  background-color: #99E2D0;
+  transition: transform 330ms ease-in-out;
+}
+.restaurant__menu__container__content__slide__logo {
+  font-size: 22px;
+  color: #99E2D0;
+}
+.restaurant .order {
+  text-align: center;
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 17.5px 12.8% 16.5px 13%;
+  border: none;
+  margin: 40px 0 40px 25.2%;
+}
+
+/**/
+/*FOOTER*/
+.footer {
+  padding: 22px 6.66% 22px 6.66%;
+  background-color: #353535;
+  color: #FFFFFF;
+}
+.footer__title {
+  font-family: shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.footer__link__content {
+  margin-top: 8px;
+  color: #FFFFFF;
+}
+.footer__link__content__logo-container {
+  display: inline-block;
+  height: 13px;
+  font-size: 13px;
+  width: 11px;
+  margin-right: 2.93%;
+}
+.footer__link__content__text {
+  display: inline-block;
+}
+
+/**//*# sourceMappingURL=styles.css.map */

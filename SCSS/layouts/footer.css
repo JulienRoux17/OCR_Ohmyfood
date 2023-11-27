@@ -1,0 +1,19 @@
+.footer {
+  padding: 22px 6.66% 22px 6.66%;
+}
+.footer__title {
+  font-family: shrikhand;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+.footer__link__content {
+  margin-top: 8px;
+}
+.footer__link__content__logo-container {
+  display: inline-block;
+  height: 13px;
+  font-size: 13px;
+  width: 11px;
+  margin-right: 2.93%;
+}/*# sourceMappingURL=footer.css.map */

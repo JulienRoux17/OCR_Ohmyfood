@@ -1,0 +1,9 @@
+@mixin button {
+    text-align: center;
+    background: linear-gradient(360deg, #9356DC, #FF79DA);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -1,0 +1,258 @@
+/*HTML*/
+*{
+    font-family: 'Roboto' , sans-serif;
+    margin-block: 0;
+}
+/**/
+
+/*VARIABLES*/
+
+/*COLORS*/
+$main-bg-color: #F6F6F6;
+$white: #FFFFFF;
+$purple: #9356DC;
+$grey: #353535;
+$grey-light: #7E7E7E;
+$black-light: #353535;
+$black: #000;
+$green-light: #99E2D0;
+$green: #008766;
+/**/
+/*SHADOW*/
+$shadow-light: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+/**/
+
+@mixin button {
+    text-align: center;
+    background: linear-gradient(360deg, #9356DC, #FF79DA);
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+}
+/**/
+
+/*BODY*/
+body{
+    max-width: 375px;
+    margin: 0;
+}
+/**/
+
+/*HEADER*/
+.navbar{
+    display: flex;
+    padding: 17px 0 16px 4.53%;
+    justify-content: center;
+    &--flex{
+        display: flex;
+        gap: 17%;
+        justify-content: flex-start;
+    }
+    &__redirect-link{ 
+        &__content{
+            width: 30px;
+            height: 30px;
+            &__logo{
+                font-size: 30px;
+                color: $black;
+            }
+        }
+    }
+    &__title{
+        width: 162px;
+        height: 30px;
+        &__logo{
+            width: 162px;
+            height: 30px;
+            font-size: 30px;
+        }
+        &__text{
+            display: none;
+        }
+    }
+
+}
+
+.img{
+    height: 275px;
+    width: 100%;
+}
+
+.opener{
+    /*height: 225px;*/
+    &__content{
+        padding: 15.5px 0 15.5px 0;
+        background-color: #EAEAEA;
+        &__text{
+            text-align: center;
+            &__icon-location{
+                margin-right: 4.53%;
+            }
+        }
+    }
+    &__hook{
+        background-color: $main-bg-color;
+        padding: 30px 0 30px 0;
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+            margin: 30px 8% 27px 8%;
+        }
+        &__link{
+            display: block;
+            width: 218px;
+            margin-left: 21.86%;
+            padding: 17px 0 17px 0;
+            text-align: center;
+            background: linear-gradient(360deg, #9356DC, #FF79DA);
+            color: $white;
+            border-radius: 25px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            &__text{
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/**/
+
+/*MAIN*/
+
+/*RESTAURANT*/
+
+.restaurant{
+    background-color: $main-bg-color;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+    &__name{
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: shrikhand;
+        margin: 32px 7.53% 0 4.53%;
+    }
+    &__like{
+        display: inline-block;
+        background-color: $main-bg-color;
+        width: 22px;
+        height: 22px;
+        font-size: 22px;
+        &__heart{
+            background-color: $main-bg-color; 
+            position: absolute;
+            z-index: 1;
+            &:active {
+                display: none;
+            }
+        }
+        &__heart-purple{
+            display: none;
+            position: absolute;
+            color: $purple;
+        }
+    }
+    &__menu{
+        margin: 40px 4.53% 0 4.53%;
+        &__division{
+            font-size: 16px;
+            font-weight: 300;
+            height: 27px;
+        }
+        &__border{
+            width: 40px;
+            height: 0;
+            border: 2px solid;
+            border-color: $green-light;
+        }
+        &__container{
+            margin-top: 12px;
+            border-radius: 15px;
+            background-color: $white;
+            padding: 15px 0 15px 4.4%;
+            display: flex;
+            &__card{
+                display: flex;
+                &__plats{
+                    width: 53%;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                &__text{
+                    width: 47%;
+                    display:inline-block;
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+            &__content{
+                display: flex;
+                    &__price{
+                        display: inline-block;
+                        width: 7.92%;
+                        font-size: 15px; 
+                        font-weight: 700;
+                        margin-left: 43%;
+                        transition: transform 330ms ease-in-out;
+                    }
+                    &__slide{
+                        display: none;
+                        padding: 28px 17.5% 28px 17.5%;
+                        background-color: $green-light;
+                        transition: transform 330ms ease-in-out;
+                        &__logo{
+                            font-size: 22px;
+                            color: $green-light;
+                        }
+                    }
+            }
+        }           
+    }
+    .order{
+        @include button;
+        padding: 17.5px 12.8% 16.5px 13%;
+        border: none;
+        margin: 40px 0 40px 25.2%;
+    }
+}
+/**/
+
+/*FOOTER*/
+
+.footer{
+    padding: 22px 6.66% 22px 6.66%;
+    background-color: #353535;
+    color: $white;
+    &__title{
+        font-family: shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+    &__link{
+        &__content{
+            margin-top: 8px;
+            color: $white;
+            &__logo-container{
+                display: inline-block;
+                height: 13px;
+                font-size: 13px;
+                width: 11px;
+                margin-right: 2.93%;
+            }
+            &__text{
+                display: inline-block;
+            }
+        }
+    }
+}
+/**/
