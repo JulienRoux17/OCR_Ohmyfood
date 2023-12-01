@@ -110,7 +110,7 @@ body {
   font-size: 28px;
   font-weight: 400;
   font-family: shrikhand;
-  margin: 32px 7.53% 0 4.53%;
+  margin: 32px 3.47% 0 3.47%;
 }
 .restaurant__like {
   display: inline-block;
@@ -133,7 +133,7 @@ body {
   color: #9356DC;
 }
 .restaurant__menu {
-  margin: 40px 4.53% 0 4.53%;
+  margin: 40px 3.47% 0 3.47%;
 }
 .restaurant__menu__division {
   font-size: 16px;
@@ -150,44 +150,54 @@ body {
   margin-top: 12px;
   border-radius: 15px;
   background-color: #FFFFFF;
-  padding: 15px 0 15px 4.4%;
-  display: flex;
+}
+.restaurant__menu__container:active + .left__slide {
+  display: block;
+  animation: left__slide 660ms;
 }
 .restaurant__menu__container__card {
-  display: flex;
+  width: 82%;
+  display: inline-block;
+  margin: 15px 0 15px 15px;
 }
 .restaurant__menu__container__card__plats {
-  width: 53%;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
+  text-overflow: ellipsis;
 }
 .restaurant__menu__container__card__text {
-  width: 47%;
   display: inline-block;
   font-size: 15px;
   font-weight: 300;
+  text-overflow: ellipsis;
 }
 .restaurant__menu__container__content {
-  display: flex;
+  display: block;
+  width: 11.28%;
+  text-align: end;
+  float: right;
+  height: 76px;
+  margin-left: 5px;
 }
 .restaurant__menu__container__content__price {
   display: inline-block;
-  width: 7.92%;
   font-size: 15px;
   font-weight: 700;
-  margin-left: 43%;
-  transition: transform 330ms ease-in-out;
+  margin: 43px 15px 15px 0;
 }
 .restaurant__menu__container__content__slide {
   display: none;
-  padding: 28px 17.5% 28px 17.5%;
+  float: right;
+  width: 43%;
+  height: 100%;
   background-color: #99E2D0;
-  transition: transform 330ms ease-in-out;
+  border-radius: 0 25px 25px 0;
 }
 .restaurant__menu__container__content__slide__logo {
+  margin: 26px 24px 28px 15px;
   font-size: 22px;
-  color: #99E2D0;
+  color: #FFFFFF;
 }
 .restaurant .order {
   text-align: center;
@@ -202,6 +212,16 @@ body {
   margin: 40px 0 40px 25.2%;
 }
 
+@keyframes left__slide {
+  from {
+    width: 11.28%;
+    display: none;
+  }
+  to {
+    display: block;
+    width: 43%;
+  }
+}
 /**/
 /*FOOTER*/
 .footer {
@@ -230,4 +250,36 @@ body {
   display: inline-block;
 }
 
-/**//*# sourceMappingURL=styles.css.map */
+/**/
+@media (max-width: 1440px) {
+  body {
+    max-width: 1440px;
+    margin: 0;
+  }
+  main {
+    background-color: #FFFFFF;
+  }
+  /*HEADER*/
+  header {
+    background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+  .navbar {
+    padding: 30px 0 32px 1.18%;
+    gap: 42%;
+    z-index: 1;
+    position: relative;
+    background-color: #FFFFFF;
+  }
+  .img {
+    width: 100%;
+    height: 956px;
+    margin-top: -337px;
+  }
+  /**/
+  /*RESTAURANT*/
+  .restaurant {
+    margin-top: -290px;
+    width: 73.3%;
+  }
+  /**/
+}/*# sourceMappingURL=styles.css.map */

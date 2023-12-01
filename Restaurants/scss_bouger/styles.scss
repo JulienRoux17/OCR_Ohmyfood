@@ -138,7 +138,7 @@ body{
         font-size: 28px;
         font-weight: 400;
         font-family: shrikhand;
-        margin: 32px 7.53% 0 4.53%;
+        margin: 32px 3.47% 0 3.47%;
     }
     &__like{
         display: inline-block;
@@ -161,7 +161,7 @@ body{
         }
     }
     &__menu{
-        margin: 40px 4.53% 0 4.53%;
+        margin: 40px 3.47% 0 3.47%;
         &__division{
             font-size: 16px;
             font-weight: 300;
@@ -176,42 +176,54 @@ body{
         &__container{
             margin-top: 12px;
             border-radius: 15px;
-            background-color: $white;
-            padding: 15px 0 15px 4.4%;
-            display: flex;
+            background-color: #FFFFFF;
+            &:active {
+                & + .left__slide {
+                    display: block;
+                    animation: left__slide 660ms;           
+                }
+            }
             &__card{
-                display: flex;
+                width: 82%;
+                display: inline-block;
+                margin: 15px 0 15px 15px;
                 &__plats{
-                    width: 53%;
                     font-size: 18px;
                     font-weight: bold;
                     margin-bottom: 5px;
+                    text-overflow: ellipsis;
                 }
                 &__text{
-                    width: 47%;
                     display:inline-block;
                     font-size: 15px;
                     font-weight: 300;
+                    text-overflow: ellipsis;
                 }
             }
             &__content{
-                display: flex;
+                display: block;
+                width: 11.28%;
+                text-align: end;
+                float: right;
+                height: 76px;
+                margin-left: 5px;
                     &__price{
                         display: inline-block;
-                        width: 7.92%;
-                        font-size: 15px; 
+                        font-size: 15px;
                         font-weight: 700;
-                        margin-left: 43%;
-                        transition: transform 330ms ease-in-out;
+                        margin: 43px 15px 15px 0;
                     }
                     &__slide{
                         display: none;
-                        padding: 28px 17.5% 28px 17.5%;
+                        float: right;
+                        width: 43%;
+                        height: 100%;
                         background-color: $green-light;
-                        transition: transform 330ms ease-in-out;
+                        border-radius: 0 25px 25px 0;
                         &__logo{
+                            margin: 26px 24px 28px 15px;
                             font-size: 22px;
-                            color: $green-light;
+                            color: $white;
                         }
                     }
             }
@@ -222,6 +234,17 @@ body{
         padding: 17.5px 12.8% 16.5px 13%;
         border: none;
         margin: 40px 0 40px 25.2%;
+    }
+}
+
+@keyframes left__slide{
+    from {
+        width: 11.28%;
+        display: none;
+    }
+    to{
+        display: block;
+        width: 43%;
     }
 }
 /**/
@@ -256,3 +279,44 @@ body{
     }
 }
 /**/
+
+@media (max-width: 1440px) {
+
+body{
+    max-width: 1440px;
+    margin: 0;
+}
+
+main{
+    background-color: $white    
+}
+
+/*HEADER*/
+
+header{
+    background-image: url(../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.navbar{
+    padding: 30px 0 32px 1.18%;
+    gap: 42%;
+    z-index: 1;
+    position: relative;
+    background-color: $white;
+}
+
+.img{
+    width: 100%;
+    height: 956px;
+    margin-top: -337px;
+}
+/**/
+
+/*RESTAURANT*/
+
+.restaurant{
+    margin-top: -290px;
+    width: 73.3%;
+}
+/**/
+}
