@@ -27,15 +27,19 @@
                 <p class="navbar__title__text">ohmyfood</p>
             </h1>
         </nav>
-        <img class="img" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"> 
+        <figure class="figure">
+            <img class="figure__img" src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'une table et d'une main d'un client qui tient une assiette, dans un restaurant">
+        </figure> 
     </header>
     <main>
         <section class="restaurant">
-            <h2 class="restaurant__name">La palette du goût</h1>
-            <span class="restaurant__like">
-                <i class="restaurant__like__heart fa-regular fa-heart"></i>
-                <i class="restaurant__like__heart-purple fa-solid fa-heart"></i>
-            </span>
+            <div class="restaurant__name">
+                <h2 class="restaurant__name__title">La palette du goût</h1>
+                <span class="restaurant__name__like">
+                    <i class="restaurant__name__like__heart fa-regular fa-heart"></i>
+                    <i class="restaurant__name__like__heart-purple fa-solid fa-heart"></i>
+                </span>
+            </div>
             <article class="restaurant__menu">
                 <h3 class="restaurant__menu__division">ENTRÉES</h3>
                 <div class="restaurant__menu__border"></div>
@@ -162,17 +166,29 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__title">ohmyfood</div>
-        <a class="footer__link">
-            <span class="footer__link__logo"><!--LOGO FORK AND KNIFE--></span>
-            <p class="footer__link__text">Proposer un restaurant</p>
+        <h2 class="footer__title">ohmyfood </h2>
+        <a class="footer__link" href="#">
+            <article class="footer__link__content">
+                <span class="footer__link__content__logo-container">
+                    <i class="fa-solid fa-utensils"></i>
+                </span>
+                <p class="footer__link__content__text">Proposer un restaurant</p>
+            </article>  
         </a>
-        <a class="footer__link">
-            <span class="footer__link__logo"><!--LOGO SHAKING HANDS--></span>
-            <p class="footer__link__text">Devenir partenaire</p>
+        <a class="footer__link" href="#">
+            <article class="footer__link__content">
+                <span class="footer__link__content__logo-container">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </span>
+                <p class="footer__link__content__text">Devenir partenaire</p>
+            </article>
         </a>
-        <a class="footer__link">Mentions légales</a>
-        <a class="footer__link">Contact</a>
+        <a class="footer__link" href="#">
+            <p class="footer__link__content">Mentions légales</p>
+        </a>
+        <a class="footer__link" href="#">
+            <p class="footer__link__content">Contact</p>
+        </a>
     </footer>
 </body>
 </html>
