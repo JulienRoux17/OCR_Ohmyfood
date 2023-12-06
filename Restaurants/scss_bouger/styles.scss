@@ -32,6 +32,7 @@ $shadow-light: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     font-size: 16px;
     font-weight: 500;
 }
+
 /**/
 
 /*BODY*/
@@ -130,6 +131,8 @@ body{
 
 /*RESTAURANT*/
 
+
+
 .restaurant{
     background-color: $main-bg-color;
     border-radius: 40px 40px 0 0;
@@ -147,6 +150,7 @@ body{
         &__like{
             display: inline-block;
             background-color: $main-bg-color;
+            background-clip: content-box;
             width: 22px;
             height: 22px;
             font-size: 22px;
@@ -158,12 +162,16 @@ body{
                     display: none;
                 }
             }
+            &__heart-purple{
+                display: none;
+                position: absolute;
+                background-image: $main-bg-color;
+                background-clip: content-box;
+                background: linear-gradient(180deg, rgba(147,86,220,1) 66%, rgba(255,121,218,1) 100%);
+                color: transparent;
+                
+            }
     }
-        &__heart-purple{
-            display: none;
-            position: absolute;
-            color: $purple;
-        }
     }
     &__menu{
         margin: 40px 3.47% 0 3.47%;

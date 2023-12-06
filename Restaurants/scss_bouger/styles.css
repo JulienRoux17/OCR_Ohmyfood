@@ -117,6 +117,7 @@ body {
 .restaurant__name__like {
   display: inline-block;
   background-color: #F6F6F6;
+  background-clip: content-box;
   width: 22px;
   height: 22px;
   font-size: 22px;
@@ -129,10 +130,13 @@ body {
 .restaurant__name__like__heart:active {
   display: none;
 }
-.restaurant__name__heart-purple {
+.restaurant__name__like__heart-purple {
   display: none;
   position: absolute;
-  color: #9356DC;
+  background-image: #F6F6F6;
+  background-clip: content-box;
+  background: linear-gradient(180deg, rgb(147, 86, 220) 66%, rgb(255, 121, 218) 100%);
+  color: transparent;
 }
 .restaurant__menu {
   margin: 40px 3.47% 0 3.47%;
