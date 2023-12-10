@@ -165,7 +165,7 @@ body{
             &__heart-purple{
                 display: none;
                 position: absolute;
-                background-image: $main-bg-color;
+                background-color: $main-bg-color;
                 background-clip: content-box;
                 background: linear-gradient(180deg, rgba(147,86,220,1) 66%, rgba(255,121,218,1) 100%);
                 color: transparent;
