@@ -2,6 +2,7 @@
 *{
     font-family: 'Roboto' , sans-serif;
     margin-block: 0;
+    text-decoration: none;
 }
 /**/
 
@@ -44,9 +45,8 @@ body{
 
 /*HEADER*/
 .navbar{
-    display: flex;
-    padding: 17px 0 16px 4.53%;
-    justify-content: center;
+    padding: 17px 0 16px 0;
+    text-align: center;
     &--flex{
         display: flex;
         gap: 17%;
@@ -58,12 +58,12 @@ body{
             height: 30px;
             &__logo{
                 font-size: 30px;
-                color: $black;
+                color: black;
             }
         }
     }
     &__title{
-        width: 162px;
+        width: 100%;
         height: 30px;
         &__logo{
             width: 162px;
@@ -72,6 +72,9 @@ body{
         }
         &__text{
             display: none;
+        }
+        &--size{
+            width: 162px;
         }
     }
 
@@ -163,11 +166,9 @@ body{
                 }
             }
             &__heart-purple{
-                display: none;
                 position: absolute;
-                background-color: $main-bg-color;
-                background-clip: content-box;
-                background: linear-gradient(180deg, rgba(147,86,220,1) 66%, rgba(255,121,218,1) 100%);
+                -webkit-background-clip: text !important;
+                background: linear-gradient(180deg, rgba(147,86,220,1) 1%, rgba(255,121,218,1) 100%);
                 color: transparent;
                 
             }
@@ -376,7 +377,7 @@ main{
 }
 
 .footer article {
-    width: 182px;
+    width: 188px;
 }
 /**/
 }

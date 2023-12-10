@@ -20,9 +20,8 @@ body {
 /**/
 /*HEADER*/
 .navbar {
-  display: flex;
-  padding: 17px 0 16px 4.53%;
-  justify-content: center;
+  padding: 17px 0 16px 0;
+  text-align: center;
 }
 .navbar--flex {
   display: flex;
@@ -38,7 +37,7 @@ body {
   color: black;
 }
 .navbar__title {
-  width: 162px;
+  width: 100%;
   height: 30px;
 }
 .navbar__title__logo {
@@ -48,6 +47,9 @@ body {
 }
 .navbar__title__text {
   display: none;
+}
+.navbar__title--size {
+  width: 162px;
 }
 
 .opener {
@@ -77,7 +79,7 @@ body {
 .opener__hook__link {
   display: block;
   width: 218px;
-  margin-left: 21.86%;
+  margin: auto;
   padding: 17px 0 17px 0;
   text-align: center;
   background: linear-gradient(360deg, #9356DC, #FF79DA);
@@ -97,34 +99,31 @@ body {
 .fonctions__title {
   margin-bottom: 33px;
 }
-.fonctions__container {
-  display: inline-block;
+.fonctions__cards__container {
   width: 96%;
   border-radius: 20px;
   padding: 26.5px 0 26.5px 0;
   margin: 0 0 25px 2.67%;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6%;
 }
-.fonctions__container__number {
-  display: inline-block;
+.fonctions__cards__container__number {
   padding: 2.5px 7.5px 2.5px 7.5px;
   border-radius: 50%;
-  margin-left: -3%;
+  margin-left: -4%;
   color: white;
   background-color: #9356DC;
 }
-.fonctions__container__logo {
-  display: inline-block;
-  margin: 0 8.06% 0 7.78%;
-}
-.fonctions__container__logo__icon-color--grey {
+.fonctions__cards__container__logo__icon-color--grey {
   color: #7E7E7E;
 }
-.fonctions__container__logo__icon-color--purple {
+.fonctions__cards__container__logo__icon-color--purple {
   color: #9356DC;
 }
-.fonctions__container__text {
+.fonctions__cards__container__text {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
@@ -145,6 +144,7 @@ body {
 }
 .restaurants__cards__link {
   text-decoration: none;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurants__cards__link__container {
   display: flex;
@@ -166,6 +166,7 @@ body {
   border-radius: 2px;
   background-color: #99E2D0;
   color: #008766;
+  font-weight: bold;
 }
 .restaurants__cards__link__container__description {
   display: flex;
@@ -237,4 +238,100 @@ body {
   display: inline-block;
 }
 
+/**/
+/*MEDIA QUERIES*/
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: 0;
+  }
+  .opener__content__text__icon-location {
+    margin-right: 1%;
+  }
+  .opener__hook__title {
+    font-size: 40px;
+  }
+  .opener__hook__text {
+    font-size: 18px;
+  }
+  .fonctions {
+    padding: 50px 12.5% 50px 12.5%;
+    height: 131px;
+  }
+  .fonctions__title {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .fonctions__cards {
+    display: flex;
+    gap: 5.6%;
+    margin-left: 10px;
+  }
+  .fonctions__cards__container {
+    width: 29.6%;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 5.1%;
+    justify-content: flex-start;
+  }
+  .fonctions__cards__container__number {
+    margin-left: -3.5%;
+  }
+  .restaurants {
+    padding: 30px 12.5% 30px 12.5%;
+  }
+  .restaurants__cards {
+    height: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 9.25%;
+  }
+  .restaurants__cards__link {
+    width: 45.375%;
+    height: 251px;
+  }
+  .restaurants__cards__link__container {
+    margin-top: 0;
+  }
+  .restaurants__cards__link__container__new {
+    margin-left: 37%;
+  }
+  .restaurants__cards__link__container__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*FOOTER*/
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 2.08% 30px 2.08%;
+  }
+  .footer__title {
+    order: 5;
+    margin-bottom: 0;
+    margin-left: 3%;
+  }
+  .footer__link {
+    margin-right: 1.5%;
+  }
+  .footer__link__content {
+    margin-top: 0;
+  }
+  .footer__link__logo {
+    display: inline-block;
+    width: 11px;
+    height: 13px;
+  }
+  .footer__link__text {
+    display: inline-block;
+    margin-left: 0.5%;
+  }
+  .footer article {
+    width: 188px;
+  }
+  /**/
+}
 /**//*# sourceMappingURL=styles.css.map */

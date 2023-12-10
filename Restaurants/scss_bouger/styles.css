@@ -2,6 +2,7 @@
 * {
   font-family: "Roboto", sans-serif;
   margin-block: 0;
+  text-decoration: none;
 }
 
 /**/
@@ -20,9 +21,8 @@ body {
 /**/
 /*HEADER*/
 .navbar {
-  display: flex;
-  padding: 17px 0 16px 4.53%;
-  justify-content: center;
+  padding: 17px 0 16px 0;
+  text-align: center;
 }
 .navbar--flex {
   display: flex;
@@ -35,10 +35,10 @@ body {
 }
 .navbar__redirect-link__content__logo {
   font-size: 30px;
-  color: #000;
+  color: black;
 }
 .navbar__title {
-  width: 162px;
+  width: 100%;
   height: 30px;
 }
 .navbar__title__logo {
@@ -48,6 +48,9 @@ body {
 }
 .navbar__title__text {
   display: none;
+}
+.navbar__title--size {
+  width: 162px;
 }
 
 .figure {
@@ -131,11 +134,9 @@ body {
   display: none;
 }
 .restaurant__name__like__heart-purple {
-  display: none;
   position: absolute;
-  background-color: #F6F6F6;
-  background-clip: content-box;
-  background: linear-gradient(180deg, rgb(147, 86, 220) 66%, rgb(255, 121, 218) 100%);
+  -webkit-background-clip: text !important;
+  background: linear-gradient(180deg, rgb(147, 86, 220) 1%, rgb(255, 121, 218) 100%);
   color: transparent;
 }
 .restaurant__menu {
@@ -326,7 +327,7 @@ body {
     margin-left: 0.5%;
   }
   .footer article {
-    width: 182px;
+    width: 188px;
   }
   /**/
 }/*# sourceMappingURL=styles.css.map */
